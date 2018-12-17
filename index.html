@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rythm</title>
+    <style>
+        body{
+            margin: 0;
+            padding-bottom: 0;
+        }
+        #page1{
+            background-color:  whitesmoke;
+            padding-bottom: 410px ;
+            
+ 
+            
+        }
+        #topbar{
+            width: 100%;
+            height: 70px;
+            border-bottom: 1px solid lightgrey;
+            position: fixed;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+       
+        #toplist img{
+            margin-top: -4px;
+            float: right;
+        }
+        #content h2{
+            background-color: darkslategrey;
+            color: white;
+            padding-left: 15px;
+            letter-spacing: 0.5em;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 1.8;
+            opacity: .9;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+ 
+        }
+        #content h1{
+             letter-spacing: 5px;
+           padding-top: 250px;
+            text-align: center;
+            margin-top: 0;
+          position: relative;
+          font-size: 16px;
+         font-weight: 400;
+         letter-spacing: 0.3em;
+         line-height: 1.2;
+         opacity: .75;
+       }
+        .fixwidth{
+            width: 1300px;
+            margin: 0 auto;
+        }
+        .break{
+            clear: both;
+        }
+        #btn{
+            position: relative;
+            top: 250px;
+            left: 650px;
+        }
+           
+        button{
+            width: 175px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 2px;
+            padding: 15px 20px 15px 20px;
+            font-size: 12px;
+            color: white;
+            background-color: black;
+            letter-spacing: 2px;
+            
+            
+        }
+        button:hover{
+            background-color: darkslategrey;
+            cursor: pointer;
+        }
+           
+        #toplist input{
+            width: 150px;
+            height 100px;
+            border: 10px solid black;
+            background-image: url("images/search.PNG");
+            background-repeat: no-repeat;
+            background-position: right center;
+            display: none;
+        }
+       
+        #about{
+            background-color: white;
+            width: 100%
+            font-family:  "Open Sans", arial, sans-serif;
+                font-size: 15px;
+            font-weight: 300;
+                color: #777;
+                line-height: 1.7;
+            padding-bottom: 150px;
+        
+        }
+        #about p{
+            font-size: 1.8em;
+            letter-spacing: 0.3em;
+            padding-bottom: 100px;
+        }
+        #us{
+            font-size: 0.4em;
+           margin-left: 550px;
+        }
+        #us:hover{
+            color: black;
+            cursor: pointer;
+        }
+        #blank{
+            width: 100%;
+            height: 150px;
+            margin-top: 10px;
+            
+        }
+        #left{
+            
+            float: left;
+            width: 30%;
+            height: auto;
+            padding-right: 40px;
+            
+        }
+        #right{
+            float: right;
+            width: 30%;
+            height: auto;
+            padding-left: 10px;
+                
+        }
+        #left li{
+            margin-left: -40px;
+            margin-top: -5px;
+            padding-bottom: 20px;
+            border-top: 2px solid black;
+            list-style: none;
+            color: black;
+        }
+        #services{
+            background-color: white;
+            width: 100%;
+            color: #777;
+            line-height: 1.8em;
+            padding: 150px 0 150px 0;
+        }
+       
+        #services h2{
+            color: black;
+            text-align: center;
+            letter-spacing: 0.5em;
+            opacity: 0.7;
+            padding-bottom: 100px;
+        }
+        table{
+            padding: 0 0 40px 80px;
+            
+        }
+        
+        td{
+            padding-right: 100px;
+            font-weight: 300;
+                
+        }
+       td:hover{
+            color: black;
+            cursor: pointer;
+        }
+        #large{
+            float: left;
+            width: 33%;
+            font-size: 1.8em;
+            line-height: 1.5em;
+            padding-right: 20px;
+            margin-top: -20px;
+           
+        }
+        #small{
+            float: right;
+            width: 33%;
+            padding-left: 20px;
+        }
+        #footer{
+            font-size:0.5em;
+            letter-spacing: 0.2em;
+        }
+        #view{
+            margin-top: 100px;
+            text-align: center;
+            letter-spacing: 0.3em;
+            font-size: 0.8em;
+           
+           
+        }
+        #view:hover{
+            color: black;
+            cursor: pointer;  
+        }
+        #Talk{
+            background-color: black;
+            width: 100%;
+            height: 500px;
+            padding-right:  40px;
+            margin-left: -10px;
+            color: whitesmoke;
+        }
+        #lets{
+            float: left;
+            width: 53%;
+            padding-top: 100px;
+            
+        }
+        #tele{
+            float: right;
+            background-color: darkgrey;
+            width: 600px;
+            height: 350px;
+           
+           
+             }
+        #lets h3{
+            letter-spacing: 0.3em;
+            padding-bottom: 10px;
+        }
+        #lets button{
+            background-color: lightgrey;
+            color:black; 
+            
+        }
+        #lets p{
+            padding-bottom: 25px;
+            line-height: 1.5em;
+            letter-spacing: 0.1em;
+        }
+        #lets button:hover{
+            background-color: white;
+            cursor: pointer;
+         }
+        #tele img{
+            position: relative;
+            top: -90px;
+        }
+        #base{
+             position: relative;
+            top: -4px;
+        }
+        #base img{
+
+            position: relative;
+            left: 213px;
+            
+        }
+       
+        #work div{
+             color: #777;
+            letter-spacing: 0.3em;
+            display: block;
+            float: left;
+            padding: 150px 120px 150px 0;
+           
+        }
+        
+        #work1{
+            width: 25%
+        }
+        #process{
+            letter-spacing: 0.1em;
+            line-height: 1.5em;
+            padding-top: 50px;
+        }
+        #latest{
+            padding-top: 150px;
+            text-align: center;
+            color: #777;
+            letter-spacing: 0.1em;
+            line-height: 1.5em;
+           
+        }
+        #latest h3{
+            color: black;
+            letter-spacing: 0.3em;
+            opacity: 0.75;
+        }
+        #latest p{
+            padding: 0 450px 0 450px;
+            letter-spacing: 0.1em;
+        }
+        #images{
+        margin-top: 100px;    
+    position:relative;
+    width:100%;
+            border-spacing: 2px;
+   
+}
+        #latest img:hover{
+            opacity: 0.3em;
+        }
+#column1{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:50px;
+    width:100px;
+    margin-left: -10px;
+  border-spacing: 2px;
+}
+#column2{
+    height:50px;
+    width:100px;
+    margin:0px auto;
+    border-spacing: 2px;
+}
+#column3{
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:50px;
+    width:100px;
+   border-spacing: 2px;
+
+}
+        #portfolio{
+            background-color: black;
+            color: whitesmoke;
+            width: 100%;
+            height: 250px;
+            margin-top: 360px;
+            padding: 0 30px 0 0;
+            margin-left: -10px;
+            text-align: center;
+               
+        }
+        #portfolio h3{
+            padding-top: 80px;
+            letter-spacing: 0.3em
+        }
+        #portfolio button{
+             background-color: lightgrey;
+            color:black; 
+            width: 250px;
+            height: 40px;
+            
+        }
+        #portfolio button:hover{
+            background-color: white;
+            cursor: pointer;
+        }
+        #choose h3{
+            padding: 150px 0 80px 0;
+            text-align: center;
+            letter-spacing: 0.3em;
+            opacity: 0.75;
+        }
+        #choose {
+            pointer-events: none;
+        }
+        #choose img{
+            padding-left: 110px;
+        }
+        .h1{
+            text-align: center;
+            letter-spacing: 0.3em;
+        }
+        .p{
+            color: #777;
+            letter-spacing: 0.1em;
+        }
+        .mySlides1 {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+        
+        #awesome button{
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+        #awesome h2{
+            
+            letter-spacing: 0.2em;
+        }
+        #awesome p{
+            line-height: 1.5em;
+            letter-spacing: 0.1em;
+            padding: 30px 0 30px 0; 
+        }
+        #awesome button:hover{
+            background-color: black;
+            color: white;      
+        }
+        #couple{
+            width: 60%;
+                
+        }
+        #awesome table{
+            width 100%;
+            padding: 150px 0 100px 0;
+        }
+        #shopping {
+            padding-top: 150px;
+        }
+        
+        #shopping table{
+           padding: 75px 0 150px 0;
+            color: #777;
+        }
+        #shopping tr{
+            line-height: 2em;
+             
+        }
+        #shopping img:hover{
+            opacity: 0.6;
+        }
+        #shopping button{
+            background-color: lightgrey;
+            color: #777;
+            
+        }
+        #shopping button:hover{
+            background-color: darkgrey;
+        }
+            
+         #our{
+            font-size: 0.6em;
+           margin-left: 900px;
+             color: #777;
+             
+        }
+        #say{
+            width: 100%;
+            height: 500px;
+            margin-right: -200px;
+           
+            
+            background-image: url(images/laptop.PNG);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #anim{
+            background: black;
+            opacity: 0.8;
+            width: 100%;
+            height: 500px;
+            text-align: center;
+            color: white;
+            padding: 0 200px 0 150px;
+        }
+        #anim img{
+            padding-top: 150px;
+        }
+        #anim p{
+            padding: 0 200px 0 150px;
+            font-size: 1.3em;
+            letter-spacing: 0.1em;
+            
+        }
+        #anim span{
+            font-size: 0.6em;
+        }
+         .mySlides2 {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+        
+        #design button{
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+        #design h2{
+            
+            letter-spacing: 0.2em;
+        }
+        #design p{
+            line-height: 1.5em;
+            letter-spacing: 0.1em;
+            padding: 30px 0 30px 0; 
+        }
+        #design button:hover{
+            background-color: black;
+            color: white;      
+        }
+        #leaf{
+            width: 60%;
+                
+        }
+        #design table{
+            width 100%;
+            padding: 150px 0 100px 0;
+        }
+        #blogs{
+            padding: 100px 0 100px 0;
+        }
+        #blogs table{
+         
+            padding: 75px 0 100px 0;}
+        #blogs span{
+             font-size: 0.6em;
+           margin-left: 700px;
+             color: #777;
+             
+        }
+        #blogs span:hover{
+            color: black;
+            cursor: pointer;
+            
+        }
+         #blogs button{
+             height: 10px;
+            background-color: lightgrey;
+            color: #777;
+            
+            
+        }
+        #blogs button:hover{
+            background-color: darkgrey;
+        }
+        
+        
+        #date{
+            padding-top: 0;
+             font-size: 0.7em;
+          letter-spacing: 0.1em;
+             color: #777;
+            pointer-events: none
+        }
+        #blogs img:hover{
+            opacity: 0.8;
+            
+        }
+        #desc{
+            letter-spacing: 0.1em;
+             pointer-events: none;
+            line-height: 1.5em;
+            
+        }
+        #weare{
+            background-image: url(images/background.PNG);
+            background-size: cover;
+            background-attachment: fixed;
+            height: 600px;
+        
+        }
+        #weare div{
+            background: black;
+            opacity: 0.8;
+            height: 600px;
+            color: white;
+            text-align: center;
+            
+        }
+        #subscribe{
+            background-color: whitesmoke;
+            width: 100%;
+            height: 275px;
+            text-align: center
+        }
+        #subscribe p{
+            padding-bottom: 10px;
+            
+        }
+        #subscribe h3{
+            padding-top: 80px;
+            opacity: 0.75;
+        }
+        #subscribe input{
+            height: 40px;
+            width: 350px;
+            color: black;
+            border: 1px solid black;
+        }
+        #find{
+            text-align: center;
+            padding: 100px 0 100px 0;
+            color: black;
+            opacity: 0.85;
+        }
+        #find table{
+            padding-left: 350px;
+        }
+        #project{
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 110px;
+            text-align: center;
+            padding: 100px 0 60px 0;
+            letter-spacing: 0.3em;
+        }
+        #project button{
+            background-color: lightgrey;
+            color: black;
+        }
+        #project button:hover{
+            background-color: white;
+        }
+        #end{
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            padding: 100px 0 100px 0;
+            
+        }
+        #end h4, p{
+        opacity: 0.5;
+     }
+        #end h4:hover{
+            text-decoration: underline;
+            color: black;
+            cursor: pointer;
+        }
+         #topbar ul{
+            margin-top: -25px;
+            padding: 0 10px 0px 10px;
+            float: right;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-align: center;
+            top: 20px;
+            overflow: hidden;
+            
+        }
+        #topbar li{
+            
+            padding: 0 20px 20px 40px;
+            list-style-type: none;
+            float: left;
+            
+           
+             }
+           li.hover4{
+            display: inline-block;
+        } 
+        #topbar li a{
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+             text-align: center;
+            
+ 
+        }
+       
+       
+        .none4{
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            padding: 12px 16px;
+            z-index: 1;
+            
+        }
+        .none4 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+      .none, .none1, .none2, .none3,  .none5, .none6{
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            padding: 12px 16px;
+            z-index: 1;
+            
+        }
+        .hover:hover .none{
+            display: block;
+        }
+        .hover1:hover .none1{
+            display: block;
+        }
+        .hover2:hover .none2{
+            display: block;
+        }
+        .hover3:hover .none3{
+            display: block;
+        }
+        
+        .hover4:hover .none4{
+            display: block;
+        }
+        .hover5:hover .none5{
+            display: block;
+        }
+        .hover6:hover .none6{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+  <section id="page1">
+   <div id="topbar">
+     <div>
+      <img src="images/rythm.PNG" alt="">
+       </div>
+       <ul id="toplist">
+           <li class="hover1">
+           <span>HOME</span>
+           <div class="none1">
+               <a href="#">English</a>
+               <a href="#">French</a>
+               <a href="#">German</a>
+           </div>
+            </li>
+           <li class="hover2"><span>PAGES</span>
+           <div class="none2">
+               <a href="#">English</a>
+               <a href="#">French</a>
+               <a href="#">German</a>
+           </div>
+           </li>
+           <li class="hover3">
+           <a href="#">ELEMENTS</a> 
+           <div class="none3">
+               <a href="#">English</a>
+               <a href="#">French</a>
+               <a href="#">German</a>
+           </div>
+           </li>
+           <li class="hover4">
+           <a href="javascript:void(0)" class="btn">PORTFOLIO</a>
+           <div class="none4">
+               <a href="#">Boxed</a>
+               <a href="#">Boxed(Gutter)</a>
+               <a href="#">Boxed(Titles)</a>
+               <a href="#">Wide</a>
+               <a href="#">Wide(Gutter)</a>
+               <a href="#">Wide(Titles)</a>
+               <a href="#">Single</a>
+               <a href="#">Parallex</a>
+               <a href="#">Promo</a>
+           </div>
+           </li>
+           <li class="hover5"><span>BLOG</span>
+           <div class="none5">
+               <a href="#">Classic</a>
+               <a href="#">Columns</a>
+               <a href="#">Masonry</a>
+               <a href="#">Single</a>
+           </div>
+            </li>
+           <li class="hover6">
+           <span>SHOP</span>
+           <div class="none6">
+               <a href="#">2 Columns</a>
+               <a href="#">3 Columns</a>
+               <a href="#">4 Columns</a>
+               <a href="#">Single Product</a>
+               <a href="#">Shopping Cart</a>
+           </div>
+           </li>
+           <li id="search"><a href="#">SEARCH</a> 
+          
+           <input type="text" id="input" placeholder="SEARCH...">
+           </li>
+           
+           <li>CART(0)<img src="images/cart.PNG" alt=""></li>
+           <li class="hover"><a href="#">ENG</a>
+              <div class="none">
+               <a href="#">English</a>
+               <a href="#">French</a>
+               <a href="#">German</a>
+           </div>
+            </li>
+             </ul>
+              
+       
+       </div> 
+       <div id="content">
+        <div class="fixwidth">
+         <div>
+          <h1>UNIQUE EXPERIENCE WITH</h1>
+           
+           <h2>RHYTHM CREATIVE STUDIO</h2>
+           </div>
+           
+           </div>
+       </div>
+       <div class="break"></div>
+       
+       <div id="btn">
+          
+           <button>SEE MORE</button>
+           <button>PLAY REEL</button>
+           </div>
+   </section>
+    <div class="break"></div>
+    
+   <section id="about">
+   <div id="blank"></div>
+   <div class="fixwidth">
+   <div>
+   <p>ABOUT STUDIO<span id="us">MORE ABOUT US ></span></p>
+    
+    </div>
+    <div id="left"><ul>
+        <li>BRANDING, %</li>
+        <li>DESIGN, %</li>
+        <li>DEVELOPMENT, %</li>
+    </ul></div>
+    <div id="right">Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. Donec vel ultricies purus. Nam dictum sem, eu aliquam.</div>
+
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.</div>
+    </div>
+</section>
+<hr style="background-color: white">
+ <div class="break"></div>
+<section id="services">
+<div class="fixwidth">
+<h2>SERVICES</h2>
+   
+    <table>
+        <tr>
+            <td><img src="images/horse.PNG" alt=""></td>
+            <td><img src="images/tv.PNG" alt=""></td>
+            <td><img src="images/pencil.PNG" alt=""></td>
+            <td><img src="images/setting.PNG" alt=""></td>
+            <td style="padding-right: 0"><img src="images/camera.PNG" alt=""></td>
+        </tr>
+        <tr>
+            <td style="color: black">BRANDING</td>
+            <td>WEB DESIGN</td>
+            <td>GRAPHIC DESIGN</td>
+            <td>DEVELOPMENT</td>
+            <td>PHOTOGRAPHY</td>
+        </tr>
+    </table>
+    <div id="large"><p>A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well. <br>
+
+ <span id="footer" >-JEFF BEZOS</span></p></div>
+    <div id="small"><p>Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum volutpat nibh, accumsan purus. Lorem ipsum dolor sit semper amet, consectetur adipiscing elit. In maximus ligula metus pellentesque mattis.</p></div>
+    <div><p>Donec vel ultricies purus. Nam dictum sem, ipsum aliquam . Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero.</p></div>
+     <p id="view">VIEW ALL SERVICES > </p>
+      </div>
+</section>
+ <div class="break"></div>
+<section id="Talk">
+<div class="fixwidth">
+   <div id="lets">
+       <h3>LOOKING FOR EXCLUSIVE DIGITAL SERVICES?</h3>
+       <p>Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Integer non dapibus diam, ac eleifend lectus.</p>
+       <button>LETS TALK</button>
+       </div>
+       <div id="tele">
+           <img src="images/tele.PNG" alt="">
+           <div id="base"><img src="images/base.PNG" alt="" ></div>
+       </div>
+   
+    </div>
+    </section>
+    <div class="break"></div>
+    
+    <div class="fixwidth">
+      <section id="work">
+       <div id="work1"><h4>WORK PROCESS</h4>
+       <span id="process"> Lorem ipsum dolor sit amet, c-r adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim.</span>
+       </div>
+       <div>
+           <img src="images/chat.PNG" alt="">
+           <h3>1. DISCUSS</h3>
+       </div>
+       <div>
+           <img src="images/radio.PNG" alt="">
+           <h3>2. MAKE</h3>
+       </div>
+       <div>
+          
+           <img src="images/heart1.PNG" alt="">
+           <h3>3. PRODUCT</h3>
+       </div>
+        <hr/>
+    </section>
+    
+     </div>
+    
+     <div class="break"></div>
+     <section id="latest">
+         <h3>LATEST WORKS</h3>
+         <p>Curabitur eu adipiscing lacus, a iaculis diam. Nullam placerat blandit auctor. Nulla accumsan ipsum et nibh rhoncus, eget tempus sapien ultricies. Donec mollis lorem vehicula.</p>
+        <div id="images">
+         <div id="column1"><img src="images/book.PNG" alt=""></div>
+          <div id="column2"><img src="images/men.PNG" alt=""></div>
+           <div id="column3"><img src="images/notepad.PNG" alt=""></div>
+          </div>
+     </section>
+     
+     <div class="break"></div>
+    
+   
+    <section id="portfolio">
+       <div class="fixwidth"> 
+       
+       <h3>WANT TO SEE MORE WORKS?</h3>
+       <button>LETS VIEW PORTFOLIO</button>
+       </div> 
+    </section>
+       
+        <div class="break"></div>
+<section id="choose" style="padding-bottom: 150px;">
+<div class="fixwidth">
+ <h3>WHY CHOOSE US</h3>
+ <table>
+     <tr>
+         <td><img src="images/flag.PNG" alt=""></td>
+         <td><img src="images/watch.PNG" alt=""></td>
+         <td><img src="images/parasuit.PNG" alt=""></td>
+     </tr>
+     <tr>
+         <td class="h1">WE’RE CREATIVE</td>
+         <td class="h1">WE’RE PUNCTUAL</td>
+         <td class="h1">WE HAVE MAGIC</td>
+     </tr>
+     <tr>
+         <td class="p">Lorem ipsum dolor sit amet, c-r adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim.</td>
+         <td class="p">Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend, lorem fermentum orci sit amet, iaculis libero.</td>
+         <td class="p">Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta. Nulla facilisi. Suspendisse ultricies eros blandit.</td>
+     </tr>
+     <tr>
+         <td><img src="images/heart1.PNG" alt=""></td>
+         <td><img src="images/atom.PNG" alt=""></td>
+         <td><img src="images/chat.PNG" alt=""></td>
+     </tr>
+     <tr>
+         <td class="h1">WE LOVE MINIMALISM</td>
+         <td class="h1">WE’RE RESPONSIBL</td>
+         <td class="h1">WE'RE FRIENDLY</td>
+     </tr>
+     <tr>
+         <td class="p">Cras luctus interdum sodales. Quisque quis odio dui. Sedes sit amet neque malesuada, lobortis commodo magna ntesque pharetra metus vivera sagittis.</td>
+         <td class="p">Fusce aliquet quam eget neque ultrices elementum. Nulla posuere felis id arcu blandit sagittis. Eleifender vestibulum purus, sit amet vulputate risus.</td>
+         <td class="p">Pulvinar vitae neque et porttitor. Integer non dapibus diam, ac eleifend lectus. Praesent sed nisi eleifend, fermentum orci sit amet, iaculis libero interdum.</td>
+     </tr>
+ </table>
+
+ </div> 
+    </section>
+         <div class="break"></div>
+<section id="say">
+
+      <div id="anim">
+          <img src="images/round.PNG" alt="">
+          <h3 style="letter-spacing: 0.3em;">WHAT PEOPLE SAY?</h3>
+          <p>Phasellus facilisis mauris vel velit molestie pellentesque. Donec rutrum, tortor ut elementum venenatis <br><span>-JOHN DOE, DOODLE INC.</span></p>
+      </div>
+       
+       
+    </section>
+         <div class="break"></div>
+<section id="shopping">
+<div class="fixwidth">
+  <h3 style="letter-spacing: 0.4em;">BESTSELLERS<span id="our">OUR SHOP > </span></h3>
+   <table>
+       <tr>
+           <td><img src="images/pic1.PNG" alt=""></td>
+           <td><img src="images/pic2.PNG" alt=""></td>
+           <td><img src="images/pic3.PNG" alt=""></td>
+           <td><img src="images/pic4.PNG" alt=""></td>
+       </tr>
+       <tr>
+           <td>G-STAR POLO APPLIQUE JERSEY</td>
+           <td>ONLY & SONS PIQUE POLO SHIRT</td>
+           <td>LONGLINE LONG SLEEVE</td>
+           <td>POLO SHIRT WITH FLORAL SLEEVES</td>
+       </tr>
+       <tr>
+           <td>$150.00  $94.75</td>
+           <td>$28.99</td>
+           <td>$39.99</td>
+           <td>$85.99</td>
+       </tr>
+       <tr>
+           <td><button>ADD TO CART</button></td>
+           <td><button>ADD TO CART</button></td>
+           <td><button>ADD TO CART</button></td>
+           <td><button>ADD TO CART</button></td>
+       </tr>
+   </table>
+    </div> 
+    </section>
+    <hr>
+    
+        <div class="break"></div>
+<section id="awesome">
+<div class="fixwidth">
+
+<table>
+    <tr>
+        <td id="couple">
+       
+    
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides1" src="images/couple.PNG" style="width:100%">
+  <img class="mySlides1" src="images/notepad.PNG" style="width:100%">
+  <img class="mySlides1" src="images/men.PNG" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+</td>
+ <td>
+<div class="w3-container">
+  <h2>AWESOME TEMPLATE</h2>
+  <p>Phasellus facilisis mauris vel velit molestie pellentesque. Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut accumsan ipsum erat eu sapien.</p>
+  <button>BUY NOW</button>
+</div>
+</td>
+</tr>
+</table>
+</div> 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+</section>
+        <hr>
+
+        <div class="break"></div>
+<section id="design">
+<div class="fixwidth">
+
+<table>
+    <tr>
+       <td>
+<div class="w3-container">
+  <h2>CLEAR DESIGN</h2>
+  <p>Phasellus facilisis mauris vel velit molestie pellentesque. Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut accumsan ipsum erat eu sapien.</p>
+  <button>BUY NOW</button>
+</div>
+</td>
+        <td id="leaf">
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides2" src="images/studio.PNG" style="width:100%">
+  <img class="mySlides2" src="images/leaf.PNG" style="width:100%">
+  <img class="mySlides2" src="images/men.PNG" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+   
+  </div>
+</div>
+</td>
+ 
+</tr>
+</table>
+</div> 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+</section>
+  <div class="break"></div>
+<section id="weare">
+<div>
+    
+</div>
+ </section>
+  <div class="break"></div>
+<section id="blogs">
+<div class="fixwidth">
+ <h3 style="letter-spacing: 0.4em;">LATEST NEWS<span>ALL NEWS IN OUR BLOG> </span></h3>
+ <table style="color: #777;">
+     <tr>
+         <td><img src="images/city.PNG" alt=""></td>
+         <td><img src="images/girl.PNG" alt=""></td>
+         <td><img src="images/floor.PNG" alt=""></td>
+     </tr>
+     <tr>
+         <td style="letter-spacing: 0.2em">NEW WEB DESIGN TRENDS</td>
+         <td>MINIMALISTIC DESIGN FOREVER</td>
+         <td>HIPSTER’S STYLE IN WEB</td>
+     </tr>
+     <tr id="date">
+         <td>JOHN DOE | 10 DECEMBER</td>
+         <td>JOHN DOE | 9 DECEMBER</td>
+         <td>JOHN DOE | 7 DECEMBER</td>
+     </tr>
+     <tr id="desc">
+         <td>Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.</td>
+         <td>Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.</td>
+         <td>Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.</td>
+     </tr>
+     <tr>
+         <td><button>READ MORE ></button></td>
+         <td><button>READ MORE ></button></td>
+         <td><button>READ MORE ></button></td>
+     </tr>
+ </table>
+ </div> 
+ </section>
+ <div class="break"></div>
+<section id="subscribe">
+<div class="fixwidth">
+
+<h3 style="letter-spacing: 0.3em;">STAY INFORMED WITH OUR NEWSLETTER</h3>
+<div>
+<input type="email" placeholder="ENTER YOUR EMAIL"><button>SUBSCRIBE</button>
+</div>
+<p> Please trust us, we will never send you spam</p>
+
+</div> 
+ </section>
+ <div class="break"></div>
+<section id="find">
+<div class="fixwidth">
+ <h3 style="letter-spacing: 0.3em;">FIND US</h3>
+ <table>
+     <tr>
+         <td><img src="images/call.PNG" alt=""> CALL US <br> +61 3 8376 6284</td>
+         <td><img src="images/location.PNG" alt="">  ADDRESS <br> 245 Quigley Blvd, Ste K</td>
+         <td><img src="images/inbox.PNG" alt=""> EMAIL <br> support@bestlooker.pro</td>
+     </tr>
+ </table>
+ </div> 
+ </section>
+ <div class="break"></div>
+<section id="project">
+<div class="fixwidth">
+<p2>WANT TO DISCUSS YOUR NEW PROJECT?</p2><br><br>
+<button>LETS TALK</button>
+</div> 
+ </section>
+ <div class="break"></div>
+<section id="end">
+<div class="fixwidth">
+<img src="images/logo.PNG" alt="">
+<h4 style="letter-spacing: 0.3em;"><a href="#"></a>© RHYTHM 2017.</h4>
+<p>Made with love for great people.</p>
+</div> 
+ </section>
+</body>
+</html>
